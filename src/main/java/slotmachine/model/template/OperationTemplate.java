@@ -13,7 +13,7 @@ public abstract class OperationTemplate {
 	@Autowired
 	IMachine machine;
 	
-	public ResponseEntity<GameTable> progress(){
+	public final ResponseEntity<GameTable> progress(){
 		IState state = machine.getActualMachineState();
 		operation(state);
 		GameTable gameTable = new GameTable(machine.getCards(), machine.getActualMachineState());
