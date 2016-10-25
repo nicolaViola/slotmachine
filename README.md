@@ -16,6 +16,8 @@ If the croupier give you three equal cards you win. You will have three change t
 
 ### the controller
 The controller is implemented like a REST service. It exposes the method to make the slotmachine change state. It implements a Template Pattern to execute the operation.
+![Alt text](/templateControllerClassDiagram.png?raw=true "Optional Title")
+
 
 ## Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC
