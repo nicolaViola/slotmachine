@@ -10,7 +10,7 @@ The slotmachine is implemented by a State Pattern. There are four states and eve
 How you can seen from the above picture, the edges are the operation that a state can execute. 
 
 The real game is done in the GAME state. It has injected a Croupier object which knows the game rules. Actual croupier implementation can give you three random cards from a sixteen-card pack.
-If the croupier give you three equal cards you win. You will have three change to win.
+If the croupier give you three equal cards you win. You will have three chances to win.
 
 ![Alt text](/document/slotmachineClassDiagram.png?raw=true "Slotmachine Class Diagram")
 
