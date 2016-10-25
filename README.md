@@ -21,6 +21,7 @@ The controller is implemented like a REST service. It exposes the method to make
 ## To-do List
  - SWAGGER
  - Add Spring data MongoDb to record the games (use Fongo)
+ - GUI
 
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC
