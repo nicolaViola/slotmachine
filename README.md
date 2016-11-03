@@ -38,7 +38,7 @@ then access the Testing and documentation  Swagger application through ```http:/
 
 ### Testing and documentation
 The Rest service is documented by Swagger (http://swagger.io/) so you can also test it. You can try it following this url: ```http://localhost:8080/swagger-ui.html ```
-You will have an endpoints list. A lot of those come from Spring Boot Actuator but the "machine-controller : Machine Controller" endpoint will make you able to test the game.
+You will have an endpoints list. A lot of those come from Spring Boot Actuator but the " **machine-controller : Machine Controller** " endpoint will make you able to test the game.
 Every methods match with the operation of the game. 
 
 The default state is NoCoin state so you can do:
