@@ -24,7 +24,7 @@ The controller is implemented like a Spring REST service. It exposes the methods
 The code is composed in four component:
 - Spring and swagger configurator
 - Controller which is implememnted by a Spring Rest service
-- Model which belong all of the component like slotemachine, state and croupier objects
+- Model which belong all of the components like slotemachine, states and the croupier object.
 - junit: models and controller was developed using junit test.
 
 ## Build
@@ -39,13 +39,14 @@ then access the Testing and documentation  Swagger application through ```http:/
 ### Testing and documentation
 The Rest service is documented by Swagger (http://swagger.io/) so you can also test it. You can try it following this url: ```http://localhost:8080/swagger-ui.html ```
 You will have an endpoints list. A lot of those come from Spring Boot Actuator but the " **machine-controller : Machine Controller** " endpoint will make you able to test the game.
-Every methods match with the operation of the game. 
+Every method matchs with the operation of the game. 
 
-The default state is NoCoin state so you can do:
+The default state is NoCoin state so you have to do:
 *	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
 *	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
 *	/shoot operation. You can see the new state (Game, NoCoin or Win) and the result of the game, the three cards, in the ResponsBody. If Win
-	* /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
+	* If are in Win state then /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
+	* otherwise you are able to iterate the operation of the actual state.
 
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
