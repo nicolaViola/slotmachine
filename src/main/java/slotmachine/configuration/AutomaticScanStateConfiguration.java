@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan(basePackages= {"slotmachine"})
+@ComponentScan(basePackages= {"slotmachine.controller","slotmachine.model"})
 public class AutomaticScanStateConfiguration{
 	
 

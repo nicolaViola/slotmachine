@@ -14,6 +14,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import  slotmachine.configuration.AutomaticScanStateConfiguration;
+import slotmachine.configuration.SwaggerConfig;
 import  slotmachine.model.cardspack.Card;
 import  slotmachine.model.cardspack.ICardsPack;
 import  slotmachine.model.croupier.impl.Croupier;
