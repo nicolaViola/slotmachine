@@ -21,7 +21,7 @@ The controller is implemented like a Spring REST service. It exposes the methods
 ![Alt text](/document/templateControllerClassDiagram.png?raw=true "Controller Template Class Diagram")
 
 ### Code
-The code is composed in four component:
+The code is composed by four component:
 - Spring and swagger configurator
 - Controller which is implememnted by a Spring Rest service
 - Model which belong all of the components like slotemachine, states and the croupier object.
