@@ -45,7 +45,7 @@ The default state is NoCoin state so you can do:
 *	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
 *	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
 *	/shoot operation. You can see the new state (Game, NoCoin or Win) and the result of the game, the three cards, in the ResponsBody. If Win
-	* /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
+	* /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.v
 
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
