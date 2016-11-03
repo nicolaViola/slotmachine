@@ -20,6 +20,13 @@ If the croupier give you three equal cards you win. You will have three chances 
 The controller is implemented like a Spring REST service. It exposes the methods to make the slotmachine change state. It implements a Template Pattern to execute the operation.
 ![Alt text](/document/templateControllerClassDiagram.png?raw=true "Controller Template Class Diagram")
 
+### Code
+The code is composed in four component:
+- Spring and swagger configurator
+- Controller which is implememnted by a Spring Rest service
+- Model which belong all of the component like slotemachine, state and croupier objects
+- junit: models and controller was developed using junit test.
+
 ## Build
 Use the following to build/startup backend:
 ```
@@ -40,13 +47,6 @@ The default state is NoCoin state so you can do:
 *	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
 *	/shoot operation. You can see the new state (Game, NoCoin or Win). If Win
 	* /disponeMoney operation. You can see the new state (NoCoin).
-
-## Code
-The code is composed in four component:
-- Spring and swagger configurator
-- Controller which is implememnted by a Spring Rest service
-- Model which belong all of the component like slotemachine, state and croupier objects
-- junit: models and controller was developed using junit test. 
 
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
