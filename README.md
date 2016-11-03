@@ -30,9 +30,9 @@ The default state is NoCoin state so you can do:
 -	/shoot operation. You can see the new state (Game, NoCoin or Win). If Win
 -		/disponeMoney operation. You can see the new state (NoCoin).
 
+## Used Techonlogy
+The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
+
 ## To-do List
  - Add Spring data MongoDb to record the games (use Fongo)
  - GUI
-
-## Used Techonlogy
-The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
