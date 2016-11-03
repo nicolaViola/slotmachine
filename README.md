@@ -44,7 +44,7 @@ Every methods match with the operation of the game.
 The default state is NoCoin state so you can do:
 *	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
 *	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
-*	/shoot operation. You can see the new state (Game, NoCoin or Win). If Win
+*	/shoot operation. You can see the new state (Game, NoCoin or Win) and the result of the game, the three cards, in the ResponsBody. If Win
 	* /disponeMoney operation. You can see the new state (NoCoin).
 
 ## Used Techonlogy
