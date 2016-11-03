@@ -42,6 +42,8 @@ $ cd slotmachine
 $ mvn spring-boot:run
 ```
 
+then access the Document/test Swagger application through ``` http://localhost:8080/swagger-ui.html ```
+
 ## To-do List
  - Add Spring data MongoDb to record the games (use Fongo)
  - GUI
