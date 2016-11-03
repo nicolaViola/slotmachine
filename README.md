@@ -52,5 +52,5 @@ The default state is NoCoin state so you have to do:
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
 
 ## To-do List
- - Add Spring data MongoDb to record the games (use Fongo)
+ - Add Spring data MongoDb to record the games (using Fongo)
  - GUI
