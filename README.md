@@ -45,7 +45,7 @@ The default state is NoCoin state so you have to do:
 *	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
 *	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
 *	/shoot operation. You can see the new state (Game, NoCoin or Win) and the result of the game, the three cards, in the ResponsBody.
-	* If you are in Win state then /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
+	* If you are in Win state then you can hit the /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
 	* otherwise you are able to iterate the operation of the actual state.
 
 ## Used Techonlogy
