@@ -15,6 +15,7 @@ If the croupier give you three equal cards you win. You will have three chances 
 
 ![Alt text](/document/slotmachineClassDiagram.png?raw=true "Slotmachine Class Diagram")
 
+
 ### controller implementation
 The controller is implemented like a Spring REST service. It exposes the methods to make the slotmachine change state. It implements a Template Pattern to execute the operation.
 ![Alt text](/document/templateControllerClassDiagram.png?raw=true "Controller Template Class Diagram")
