@@ -31,6 +31,13 @@ The default state is NoCoin state so you can do:
 -	/shoot operation. You can see the new state (Game, NoCoin or Win). If Win
 -		/disponeMoney operation. You can see the new state (NoCoin).
 
+### Code
+The code is composed in four component:
+- Spring and swagger configurator
+- Controller which is implememnted by a Spring Rest service
+- Model which belong all of the component like slotemachine, state and croupier objects
+- junit: models and controller was developed using junit test. 
+
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
 
