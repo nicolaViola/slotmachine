@@ -20,7 +20,7 @@ If the croupier give you three equal cards you win. You will have three chances 
 The controller is implemented like a Spring REST service. It exposes the methods to make the slotmachine change state. It implements a Template Pattern to execute the operation.
 ![Alt text](/document/templateControllerClassDiagram.png?raw=true "Controller Template Class Diagram")
 
-### Code
+### code
 The code is composed by four component:
 - Spring and swagger configurator
 - Controller which is implememnted by a Spring Rest service
@@ -36,7 +36,7 @@ $ mvn spring-boot:run
 ```
 then access the Testing and documentation  Swagger application through ```http://localhost:8080/swagger-ui.html ```
 
-### Testing and documentation
+### testing and documentation
 The Rest service is documented by Swagger (http://swagger.io/) so you can also test it. You can try it following this url: ```http://localhost:8080/swagger-ui.html ```
 You will have an endpoints list. A lot of those come from Spring Boot Actuator but the " **machine-controller : Machine Controller** " endpoint will make you able to test the game.
 Every method matchs with the operation of the game. 
