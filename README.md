@@ -23,11 +23,12 @@ The controller is implemented like a Spring REST service. It exposes the methods
 The Rest service is documented by Swagger (http://swagger.io/) so you can also test it. You can try it following this url: http://localhost:8080/swagger-ui.html
 You will have an endpoints list. A lot of those come from Spring Boot Actuator but the "machine-controller : Machine Controller" endpoint will make you able to test the game.
 Every methods match with the operation of the game. 
+
 The default state is NoCoin state so you can do:
-	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
-	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
-	/shoot operation. You can see the new state (Game, NoCoin or Win). If Win
-		/disponeMoney operation. You can see the new state (NoCoin).
+-	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
+-	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
+-	/shoot operation. You can see the new state (Game, NoCoin or Win). If Win
+-		/disponeMoney operation. You can see the new state (NoCoin).
 
 ## To-do List
  - Add Spring data MongoDb to record the games (use Fongo)
