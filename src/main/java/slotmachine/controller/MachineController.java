@@ -15,8 +15,9 @@ import slotmachine.model.template.GiveBackMoneyTemplate;
 import slotmachine.model.template.InsertCoinTemplate;
 import slotmachine.model.template.ShootTemplate;
 import slotmachine.model.template.StartToPlayTemplate;
-
+import org.springframework.web.bind.annotation.RequestMethod;
 @RestController
+@RequestMapping(method = RequestMethod.GET)
 public class MachineController{ 
 	
 	private IMachine machine;
