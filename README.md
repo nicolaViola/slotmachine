@@ -34,6 +34,14 @@ The default state is NoCoin state so you can do:
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
 
+## Build
+Use the following to build/startup backend:
+```
+$ git clone https://github.com/nicolaViola/slotmachine.git
+$ cd slotmachine
+$ mvn spring-boot:run
+```
+
 ## To-do List
  - Add Spring data MongoDb to record the games (use Fongo)
  - GUI
