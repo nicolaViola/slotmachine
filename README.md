@@ -1,5 +1,5 @@
 # Slotmachine
-This project would implement a slotmachine game. Throughout a web interface you will receive three cards and if they are equal you will win
+This project implements a slotmachine game. Through a web interface you will receive three cards and if they are equal you will win
 
 ## State-of-the-art
 ### slotmachine implementation
@@ -8,10 +8,10 @@ When the slotmachine starts, it is in a NoCoin state.
 
 ![Alt text](/document/slotmachineStateDiagram.png?raw=true "Slotmachine State Diagram")
 
-How you can seen from the above picture, the edges are the operation that a state can execute. 
+As you can see from the above picture, the edges are the operation that a state can execute. 
 
-The real game is done in the GAME state. It has injected a Croupier object which knows the game rules. Actual croupier implementation can give you three random cards from a sixteen-card pack.
-If the croupier give you three equal cards you win. You will have three chances to win.
+The real game is played in the GAME state. A Croupier object, which knows the rules of the game, is injected into the GAME state. This croupier implementation can give you three random cards from a sixteen-card pack.
+If the croupier gives you three equal cards you will win. Each new player will have three chances to win.
 
 ![Alt text](/document/slotmachineClassDiagram.png?raw=true "Slotmachine Class Diagram")
 
@@ -21,11 +21,11 @@ The controller is implemented like a Spring REST service. It exposes the methods
 ![Alt text](/document/templateControllerClassDiagram.png?raw=true "Controller Template Class Diagram")
 
 ### code
-The code is composed by four component:
+The code is made up of four components:
 - Spring and swagger configurator
 - Controller which is implememnted by a Spring Rest service
-- Model which belong all of the components like slotemachine, states and the croupier object.
-- junit: models and controller was developed using junit test.
+- Model which belongs to all of the components like slotemachine, states and the croupier object.
+- junit: models and controller developed using junit test.
 
 ## Build
 Use the following to build/startup backend:
@@ -38,15 +38,15 @@ then access the Testing and documentation  Swagger application through ```http:/
 
 ### testing and documentation
 The Rest service is documented by Swagger (http://swagger.io/) so you can also test it. You can try it following this url: ```http://localhost:8080/swagger-ui.html ```
-You will have an endpoints list. A lot of those come from Spring Boot Actuator but the " **machine-controller : Machine Controller** " endpoint will make you able to test the game.
-Every method matchs with the operation of the game. 
+You will have an endpoints list. A lot of those come from Spring Boot Actuator but the " **machine-controller : Machine Controller** " endpoint will enable you to test the game.
+Every method matches with the operation of the game. 
 
-The default state is NoCoin state so you have to do:
+As the default state is the NoCoin state, you have to:
 *	/insertCoin operation. You can see the new state (Ready) in the ResponseBody.  
 *	/startToPlay operation. You can see the new state (Game) in the ResponseBody.  
 *	/shoot operation. You can see the new state (Game, NoCoin or Win) and the result of the game, the three cards, in the ResponsBody.
-	* If you are in Win state then you can hit the /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
-	* otherwise you are able to iterate the operation of the actual state.
+	* If you are in the Win state you can hit the /disponeMoney operation. You can see the new state (NoCoin) in the ResponseBody.
+	* otherwise you are able to repeat the operation of the current state.
 
 ## Used Techonlogy
 The project uses Spring Core, Spring Boot, Rest API with Spring MVC, Swagger
